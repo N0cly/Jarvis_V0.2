@@ -11,7 +11,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jarvis": "nodemon index.js --delay 5"
+    "jarvis": "nodemon index.js --delay 5",
+    "register": "nodemon register.js --delay 5"
   },
   "author": "Noa / Nocly / Enzo",
   "license": "ISC"
