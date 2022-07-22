@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@discordjs/rest": "^1.0.0",
+    "@discordjs/voice": "^0.11.0",
+    "discord.js": "^14.0.2",
+    "nodemon": "^2.0.19"
+  },
+  "name": "jarvis_v0.2",
+  "version": "0.0.1",
+  "description": "Bot discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jarvis": "nodemon index.js --delay 5"
+  },
+  "author": "Noa / Nocly / Enzo",
+  "license": "ISC"
+}
