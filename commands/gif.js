@@ -16,5 +16,9 @@ module.exports = {
 			//.addChoice('Funny', 'gif_funny')
 			//.addChoice('Meme', 'gif_meme')
 			//.addChoice('Movie', 'gif_movie')),
-	
+	async execute(interaction) {
+		const category = interaction.options.getString('category');
+		
+		await interaction.reply(category);
+	}
 };
