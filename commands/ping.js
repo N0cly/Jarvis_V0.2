@@ -4,7 +4,8 @@ const wait = require('node:timers/promises').setTimeout;
 module.exports = {
 	data: new SlashCommandBuilder()
 	.setName('ping')
-	.setDescription('Replies with pong!!!!!!'),
+	.setDescription('Replies with pong!!!!!!')
+	.setDMPermission(true),
 	async execute(interaction) {
 		await interaction.reply("Pong!");
 		//await interaction.followUp('Pong again!');
