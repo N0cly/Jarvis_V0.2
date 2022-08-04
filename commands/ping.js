@@ -1,4 +1,4 @@
-const { SlashCommandBuilder} = require('discord.js');
+const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle} = require('discord.js');
 const wait = require('node:timers/promises').setTimeout;
 
 module.exports = {
@@ -7,7 +7,20 @@ module.exports = {
 	.setDescription('Replies with pong!!!!!!')
 	.setDMPermission(true),
 	async execute(interaction) {
-		await interaction.reply("Pong!");
+		//await interaction.reply("Pong!");
+
+		const row = new ActionRowBuilder()
+		.addComponents(
+			new ButtonBuilder()
+			.setCustomId('primary')
+			.setLabel('Primary')
+			.setStyle(ButtonStyle.Primary)
+		);
+
+		await interaction.reply({ content: 'Pong!', components: [row]});
+
+
+		
 		//await interaction.followUp('Pong again!');
 		//await interaction.followUp({ content: 'Pong again!', ephemeral: true });
 		
