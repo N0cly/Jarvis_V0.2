@@ -3,6 +3,12 @@ const { Client, GatewayIntentBits, Collection} = require('discord.js');
 const { token} = require("./data/config.json");
 const fs = require('node:fs');
 const path = require('node:path');
+const Stats = require('discord-live-stats');
+
+//const Poster = new Stats.Client(client, {
+//    stats_uri: 'http://localhost:3000/',
+//    authorizationkey: "Your Password for verifying requests | Same as in Server.js",
+//})
 
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds]});

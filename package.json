@@ -2,7 +2,10 @@
   "dependencies": {
     "@discordjs/rest": "^1.0.0",
     "@discordjs/voice": "^0.11.0",
+    "discord-live-stats": "^1.0.4",
+    "discord-passport": "^1.1.0",
     "discord.js": "^14.0.3",
+    "express": "^4.18.1",
     "nodemon": "^2.0.19"
   },
   "name": "jarvis_v0.2",
@@ -12,7 +15,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jarvis": "nodemon index.js --delay 5",
-    "register": "nodemon register.js --delay 5"
+    "register": "nodemon register.js --delay 5",
+    "server": "nodemon server.js --delay 5"
   },
   "author": "Noa / Nocly / Enzo",
   "license": "ISC"
