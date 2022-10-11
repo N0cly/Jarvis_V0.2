@@ -10,36 +10,25 @@ module.exports = {
 	.setDMPermission(true),
 	async execute(interaction) {
 		//await interaction.reply("Pong!");
-
-		const row = new ActionRowBuilder()
-		.addComponents(
-			new ButtonBuilder()
-			.setCustomId('primary')
-			.setLabel('Primary')
-			.setStyle(ButtonStyle.Primary)
-		);
-
-		var stat = require('../data/slashCounter.json');
-		var ping = JSON.parse(stat.ping);
-		let statPing = 1
-		let data = JSON.stringify(statPing)
-		console.log(ping);
-
-		if (stat.ping == undefined) {
-			console.log('false')
-		} else {
-			statPing += ping
-			fs.writeFile("C:\\Users\\Ninja\\Documents\\01.Programme\\JS\\Jarvis_V0.2\\data\\slashCounter.json", data, function(err){
-				if(err){
-					console.log(err)
-				}
-			})
-		}
-
-		await interaction.reply({ content: 'Pong!', components: [row]});
-
-
 		
+//--------------------
+		//var stat = require('../data/slashCounter.json');
+		//var ping = JSON.parse(stat.ping);
+		//let statPing = 1
+		//let data = JSON.stringify(statPing)
+		//console.log(ping);
+
+		//if (stat.ping == undefined) {
+		//	console.log('false')
+		//} else {
+		//	statPing += ping
+		//	fs.writeFile("C:\\Users\\Ninja\\Documents\\01.Programme\\JS\\Jarvis_V0.2\\data\\slashCounter.json", data, function(err){
+		//		if(err){
+		//			console.log(err)
+		//		}
+		//	})
+		//}
+//-------------------------
 		//await interaction.followUp('Pong again!');
 		//await interaction.followUp({ content: 'Pong again!', ephemeral: true });
 		
